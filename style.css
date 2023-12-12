@@ -67,8 +67,8 @@
     display: flex;
     font-family: 'Roboto';
     font-weight: bold;
-    background-color: #e0e0e0;
-    padding: 10px;
+    /* background-color: #e0e0e0; */
+    padding: 5px;
     margin-top: 5px;
     text-align: center;
   }
@@ -83,5 +83,98 @@
     grid-gap: 5px; /* Adjust the gap between grid items */
   }
 
+.icon{
+    display: flex;
+}
+
+.icon-1{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-2{
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: bold;
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
+    align-items: center;
+    gap: 16px
+    ;
+}
+
+.input-container {
+    width: 50%; /* Adjust the width as needed */
+    position: relative;
+  }
+  
+  input {
+    width: 400px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    background-color: gr;
+    border-radius: 20px; /* Adjust the border-radius to make edges curly */
+    outline: none; /* Removes default input outline */
+  }
+
+.header{
+  display: flex;
+ justify-content: space-between;
+ margin-left: 60px;
+ margin-right: 55px;
+
+}
+
+.header-1{
+  display: flex;
+  gap: 24px;
+  
+}
+
+
+  .header-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
 
   
+
+  .icon-3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .icon-4{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+
+.header-container-2
+{
+  display: flex;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  gap: 20px;
+} 
+
+
+.action-1,
+.action-2,
+.action-3
+{
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
