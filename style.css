@@ -1,9 +1,18 @@
 .main-container {
     display: flex;
-    border: 1px solid #1e293b;
+    /* border: 1px solid #1e293b; */
     width: 100%;
-    height: 100vh;
+    height: 161.5vh;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;    
 }
+
+.sidebar svg {
+  fill: white;
+
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('/assets/Roboto/Roboto-Regular.ttf') format('truetype');
@@ -13,7 +22,13 @@
 
 .sidebar {
     flex: 0 0 20%;
-    border: 1px solid #1e293b;
+    /* border: 1px solid #1e293b; */
+    color: white;
+    background-color: #0ea5e9;
+}
+
+.sidebar img {
+  filter: brightness(0) invert(1);
 }
 
 .side-head{
@@ -21,7 +36,7 @@
     margin-top: 20px;
     /* margin-left: 50px; */
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 12px;
     font-weight: bold;
     
 }
@@ -29,22 +44,26 @@
 #dashboard{
     margin-top: 10px;
     margin-left: 16px;
+    font-size: 24px;
 }
 
 .holder {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-bottom: -10px;
 }
 
 .header-section {
     flex: 0 0 20%;
-    border: 1px solid #1e293b;
+    /* border: 1px solid #1e293b; */
+    margin-bottom: -25px;
 }
 
 .content {
     flex: 1;
-    border: 1px solid #1e293b;
+    /* border: 1px solid #1e293b; */
+    margin-right: -20px;
 }
 
 
@@ -52,7 +71,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-left: 5px;
 }
+
 
 #bottom-1 {
     display: grid;
@@ -171,12 +192,17 @@
 .action-2,
 .action-3
 {
-  border: 1px solid #ccc;
   border-radius: 20px;
+  font-size: 12px;
+  width: 60px;
+  height: 20px;
   padding: 15px;
+  text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
   margin-bottom: 10px;
+  background-color: #0ea5e9;
+  color: white;
 }
 
 
@@ -184,8 +210,9 @@
   display: flex;
   /* flex-direction: column; */
   flex-shrink: 0;
-  background-color: #e7e5e4;
+  background-color: #e5e7eb;
   font-family: 'Roboto';
+  margin-bottom: 200px;
 }
 
 .new-grid{
@@ -206,6 +233,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  margin-right: 20px;
   width: 280px;
   /* border: 1px solid red; */
 }
@@ -214,11 +242,13 @@
 .grid-item-3{
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  background-color: #fafafa;
   border-radius: 10px;
   width: 300px ;
   height: 150px;
   padding: 10px;
+  margin-bottom: 15px;
 
   /* text-align: left; 
   overflow: hidden; 
@@ -244,20 +274,22 @@
 .announcements{
   display: flex;
   flex-direction: column;
+  width: 250px;
   margin-top: 24px;
-  padding: 10px;
+  padding: 15px;
   margin-right: 20px;
   font-size: 12px;
   line-height: 1.5;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  background-color: #fafafa;
   border-radius: 10px;
   gap: 8px;
 }
 
-.seperator{
-  height: 2px; /* Height of the separation line */
-  background-color: black; /* Color of the separation line */
-  margin: 10px 0; /* Adjust the margin to change the space between boxes */
+.separator{
+  height: 1px; /* Height of the separation line */
+  background-color: #e2e8f0; /* Color of the separation line */
+  margin: 10px 0 ; /* Adjust the margin to change the space between boxes */
 }
 
 .maintain{
@@ -268,18 +300,20 @@
 .trending{
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  background-color: #fafafa;
   border-radius: 10px;
   margin-top: 24px;
   padding: 10px;
   margin-right: 20px;
   font-size: 12px;
   line-height: 1.5;
+  width: 260px;
   margin-bottom: 24px;
 }
 
 .icon-5{
   display: flex;
-  gap: 10px;
+  gap: 25px;
   padding: 8px;
 }
